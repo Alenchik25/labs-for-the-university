@@ -1,3 +1,5 @@
+/* Объяснение работы в EXPLANATION.md */
+
 #include <cmath>
 #include <iostream>
 
