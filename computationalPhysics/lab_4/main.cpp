@@ -10,9 +10,6 @@ double funcDerivative(double x) { return 2 * x - 1 / x; }
 void RybakovMethod(double a, double b, double epsilon) {
   int iterations = 0;
   double x, x0, f, f0;
-  // Используем do... while потому что необходимо 
-  // чтобы тело цикла выполнилось хотя бы один раз
-  // даже если условие не будет выполнено
   do {
     x0 = a;
     f0 = func(x0);
