@@ -40,19 +40,6 @@ pair<vector<double>, int> simpleIterationMethod(const vector<vector<double>>& A,
   return make_pair(x, count);
 }
 
-/*
-expected:
-x1 = 1.589 (rounded)
-x2 = -0.736 (rounded)
-x3 = 1.995 (rounded)
-x4 = 1.878 (rounded)
-
-received
-X1 = 1.58885
-X2 = -0.736978
-X3 = 1.99512
-X4 = 1.87856
-*/
 
 // Метод Гаусса-Зейделя
 pair<vector<double>, int> gaussSeidelMethod(const vector<vector<double>>& A,
@@ -93,19 +80,7 @@ pair<vector<double>, int> gaussSeidelMethod(const vector<vector<double>>& A,
   return make_pair(x, count);
 }
 
-/*
-expected:
-x1 = 1.589 (rounded)
-x2 = -0.736 (rounded)
-x3 = 1.995 (rounded)
-x4 = 1.878 (rounded)
 
-received
-X1 = 1.58885
-X2 = -0.736978
-X3 = 1.99512
-X4 = 1.87856
-*/
 
 int main() {
   vector<vector<double>> A = {
@@ -135,3 +110,17 @@ int main() {
 
   return 0;
 }
+
+/*
+expected:
+x1 = 1.589 (rounded)
+x2 = -0.736 (rounded)
+x3 = 1.995 (rounded)
+x4 = 1.878 (rounded)
+
+received
+X1 = 1.58885
+X2 = -0.736978
+X3 = 1.99512
+X4 = 1.87856
+*/
